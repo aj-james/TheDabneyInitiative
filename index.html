@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Dabney Initiative</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+                    },
+                    colors: {
+                        dark: {
+                            DEFAULT: '#0a0a0a',
+                            surface: '#141414',
+                            card: '#1a1a1a',
+                            border: '#2a2a2a'
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            background-color: #0a0a0a;
+            color: #ededed;
+        }
+    </style>
+</head>
+<body class="bg-dark text-slate-200 antialiased selection:bg-neutral-800 selection:text-white">
+
+    <!-- Navigation -->
+    <header class="fixed top-0 left-0 right-0 z-50 bg-dark/80 backdrop-blur-md border-b border-dark-border">
+        <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+            <a href="#" class="text-xl font-extrabold tracking-tight text-white flex items-center gap-2">
+                <span class="w-3 h-3 bg-white rounded-full"></span>
+                The Dabney Initiative
+            </a>
+            <nav class="hidden md:flex items-center gap-8 text-sm font-medium text-slate-400">
+                <a href="#mission" class="hover:text-white transition-colors">Mission</a>
+                <a href="#programs" class="hover:text-white transition-colors">Programs</a>
+                <a href="#impact" class="hover:text-white transition-colors">Impact</a>
+                <a href="#contact" class="hover:text-white transition-colors">Contact</a>
+            </nav>
+            <a href="#contact" class="hidden sm:inline-flex items-center justify-center px-5 py-2.5 text-xs font-semibold uppercase tracking-wider text-black bg-white rounded-full hover:bg-slate-200 transition-all">
+                Partner With Us
+            </a>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="relative pt-32 pb-24 md:pt-48 md:pb-36 px-6 overflow-hidden border-b border-dark-border">
+        <div class="absolute inset-0 bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-neutral-900 via-dark to-dark -z-10"></div>
+        <div class="max-w-4xl mx-auto text-center">
+            <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-dark-card border border-dark-border text-xs font-semibold text-slate-300 mb-8 uppercase tracking-widest">
+                California Nonprofit Public Benefit Corporation
+            </div>
+            <h1 class="text-4xl sm:text-6xl md:text-7xl font-extrabold text-white tracking-tight mb-8 leading-[1.1]">
+                Empowering communities <br><span class="text-slate-400">through purposeful action.</span>
+            </h1>
+            <p class="text-lg sm:text-xl text-slate-400 max-w-2xl mx-auto mb-12 font-normal leading-relaxed">
+                The Dabney Initiative is dedicated to driving sustainable local revitalization, expanding educational horizons, and delivering essential community resources where they are needed most.
+            </p>
+            <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
+                <a href="#programs" class="w-full sm:w-auto px-8 py-4 text-sm font-bold uppercase tracking-wider text-black bg-white rounded-full hover:bg-slate-200 transition-all shadow-lg">
+                    Explore Our Programs
+                </a>
+                <a href="#mission" class="w-full sm:w-auto px-8 py-4 text-sm font-bold uppercase tracking-wider text-white bg-dark-card border border-dark-border rounded-full hover:bg-neutral-800 transition-all">
+                    Our Mission
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Mission Overview -->
+    <section id="mission" class="py-28 px-6 border-b border-dark-border bg-dark-surface/50">
+        <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
+            <div>
+                <span class="text-xs font-bold uppercase tracking-widest text-slate-400 mb-4 block">Our Roots & Mission</span>
+                <h2 class="text-3xl sm:text-4xl font-extrabold text-white tracking-tight mb-6">
+                    All they had was hope.
+                </h2>
+                <p class="text-slate-400 text-base leading-relaxed mb-6">
+                    When our grandparents made the trek from Alexandria, Louisiana to Compton, Watts, and Inglewood, they carried very little—except for the unyielding belief in a better future. 
+                </p>
+                <p class="text-slate-400 text-base leading-relaxed mb-6">
+                    The Dabney Initiative was built on that exact foundation. We believe true community resilience stems from foundational stability, targeted support, and creating lasting frameworks that uplift neighborhoods from within.
+                </p>
+                <p class="text-slate-400 text-base leading-relaxed">
+                    Our initiatives operate without bureaucratic red tape—focusing entirely on clean execution, direct support, and measurable outcomes for community members.
+                </p>
+            </div>
+            <div class="grid grid-cols-2 gap-4">
+                <div class="p-8 rounded-2xl bg-dark-card border border-dark-border flex flex-col justify-between">
+                    <span class="text-3xl font-extrabold text-white mb-4">100%</span>
+                    <p class="text-xs text-slate-400 font-semibold uppercase tracking-wider">Dedicated to Community Public Benefit</p>
+                </div>
+                <div class="p-8 rounded-2xl bg-dark-card border border-dark-border flex flex-col justify-between mt-8">
+                    <span class="text-3xl font-extrabold text-white mb-4">Direct</span>
+                    <p class="text-xs text-slate-400 font-semibold uppercase tracking-wider">Targeted Local Impact & Grants</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Programs Section -->
+    <section id="programs" class="py-32 px-6 border-b border-dark-border">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center max-w-2xl mx-auto mb-20">
+                <span class="text-xs font-bold uppercase tracking-widest text-slate-400 mb-4 block">Core Initiatives</span>
+                <h2 class="text-3xl sm:text-5xl font-extrabold text-white tracking-tight">Our Programs</h2>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Pillar 1 -->
+                <div class="p-10 rounded-2xl bg-dark-card border border-dark-border hover:border-slate-500 transition-all group">
+                    <div class="w-12 h-12 rounded-xl bg-white/5 border border-white/10 flex items-center justify-center text-white mb-6 font-bold text-lg">01</div>
+                    <h3 class="text-xl font-bold text-white mb-4">Education & Scholarship Programs</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed">
+                        Supporting individuals pursuing college-level coursework, technical training, and skill development to foster long-term career growth and educational attainment.
+                    </p>
+                </div>
+                <!-- Pillar 2 -->
+                <div class="p-10 rounded-2xl bg-dark-card border border-dark-border hover:border-slate-500 transition-all group">
+                    <div class="w-12 h-12 rounded-xl bg-white/5 border border-white/10 flex items-center justify-center text-white mb-6 font-bold text-lg">02</div>
+                    <h3 class="text-xl font-bold text-white mb-4">Community Grants</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed">
+                        Providing targeted micro-grants and financial support to local neighborhood projects, grassroots initiatives, and small business community enhancements.
+                    </p>
+                </div>
+                <!-- Pillar 3 -->
+                <div class="p-10 rounded-2xl bg-dark-card border border-dark-border hover:border-slate-500 transition-all group">
+                    <div class="w-12 h-12 rounded-xl bg-white/5 border border-white/10 flex items-center justify-center text-white mb-6 font-bold text-lg">03</div>
+                    <h3 class="text-xl font-bold text-white mb-4">Public Benefit & Civic Resources</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed">
+                        Developing neighborhood infrastructure, open access resources, and public welfare projects designed to strengthen communal well-being and stability.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact / Footer Section -->
+    <footer id="contact" class="py-24 px6 bg-dark-surface/30">
+        <div class="max-w-4xl mx-auto text-center">
+            <span class="text-xs font-bold uppercase tracking-widest text-slate-400 mb-4 block">Get In Touch</span>
+            <h2 class="text-3xl sm:text-4xl font-extrabold text-white tracking-tight mb-6">Let's build stronger communities together.</h2>
+            <p class="text-slate-400 text-base mb-10 max-w-lg mx-auto">
+                Reach out to learn more about our ongoing initiatives, grant criteria, or partnership opportunities.
+            </p>
+            <a href="mailto:contact@thedabneyinitiative.org" class="inline-flex items-center justify-center px-8 py-4 text-sm font-bold uppercase tracking-wider text-black bg-white rounded-full hover:bg-slate-200 transition-all shadow-lg">
+                contact@thedabneyinitiative.org
+            </a>
+            <div class="mt-20 pt-8 border-t border-dark-border flex flex-col sm:flex-row items-center justify-between text-xs text-slate-500">
+                <p>&copy; 2026 The Dabney Initiative. All rights reserved.</p>
+                <p class="mt-4 sm:mt-0">California Nonprofit Public Benefit Corporation</p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
